@@ -1,18 +1,29 @@
 package learning_management_system;
 
 public class Course {
-	String courseName;
-	String courseCredits;
-	String courseCode;
-	String courseInstructor;
+    private String courseId;
+    private String courseName;
+    private String teacherId;
 
-	Course(String courseName, String courseCredits, String courseCode, String courseInstructor) {
-		this.courseName = courseName;
-		this.courseCode = courseCode;
-		this.courseCredits = courseCredits;
-		this.courseName = courseInstructor;
-	}
-	
-	
+    public Course(String courseId, String courseName, String teacherId) {
+        this.courseId = courseId;
+        this.courseName = courseName;
+        this.teacherId = teacherId;
+    }
 
+    public String getCourseId() {
+        return courseId;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public String getTeacherId() {
+        return teacherId;
+    }
+
+    public String toCSV() {
+        return courseId + "," + courseName + "," + teacherId;
+    }
 }
