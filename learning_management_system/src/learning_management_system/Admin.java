@@ -1,5 +1,7 @@
 package learning_management_system;
 
-public class  Admin {
+public class  Admin  {
+
+	
 
 }
